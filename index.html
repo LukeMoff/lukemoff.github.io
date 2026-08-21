@@ -30,8 +30,15 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<!-- for writing in LaTeX -->
-		<script src="https://polyfill.io"></script>
-    	<script id="MathJax-script" async src="https://jsdelivr.net"></script>
+	    <script>
+	        window.MathJax = {
+	            tex: {
+	                inlineMath: [['$', '$'], ['\\(', '\\)']],
+	                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+	            }
+	        };
+	    </script>
+	    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<!-- The body is the location where your site's content will go -->
 	<body class="is-preload">
@@ -245,7 +252,7 @@
 							<p>
 								<b>Abstract:</b> We present late-time radio observations of Type II supernovae (SNe II) to probe the interaction of the 
 								ejecta with the circumstellar medium (CSM) at larger physical scales than ever before. We find that most Type II sources 
-								no longer have luminous radio emission at late timescales, and place upper limits of \( \sim 10^{25} \)--\( 10^{27} \) erg 
+								no longer have luminous radio emission at late timescales, and place upper limits of $\sim 10^{25}$--$10^{27}$ erg 
 								s\( ^{-1} \) Hz\( ^{-1} \) on peak luminosity densities. We add constraints on the shock velocities and pre-explosion mass-loss
 								rates of SNe IIb that are consistent with the results of previous work. Our results provide an upper limit of \( \sim \)0.1--1 
 								\( M_{\sun} \) yr\( ^{-1} \) \( \left(\textrm{km s}^{-1}\right)^{-1} \) on the mass-loss rates of IIb progenitors and a lower limit 
